@@ -45,15 +45,15 @@ public class DemoApplicationTests {
                 equalTo(blitzer.totalActionCount()));
     }
 
-    @Test
-    public void deadLock() throws InterruptedException {
-        new Thread(() -> {
-            System.out.println("start1");
-            testSingletonBean.doJobSync();}).start();
-        new Thread(() -> {
-            System.out.println("start2");
-            testSingletonBean.doJobSync2();}).start();
-        Thread.sleep(5000);
-    }
+//    @Test
+//    public void deadLock() throws InterruptedException {
+//        new Thread(() -> {
+//            System.out.println("start1");
+//            testSingletonBean.doJobSync();}).start();
+//        new Thread(() -> {
+//            System.out.println("start2");
+//            testSingletonBean.doJobSync2();}).start();
+//        Thread.sleep(5000);
+//    }
 
 }

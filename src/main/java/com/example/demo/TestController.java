@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TestController {
-
     @Autowired
     private TestService testService;
     @Autowired
